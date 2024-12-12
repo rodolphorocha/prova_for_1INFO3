@@ -7,11 +7,21 @@
     //AQUI, USE FOR...OF!
     
     //Entrada
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+    let vogaisMaiusculas = ["A", "E", "I", "O", "U"];
+    let arrayVazio = [];
 
 
     //Processamento
-
+    for (let item of lista) {
+        let catar = item.charAt(0)
+        if (vogaisMaiusculas.includes(catar)) {
+            arrayVazio.push(item)
+        }
+    }
 
     //Saída
-
+    document.write(`A quantidade de vogais maiusculas é: ${arrayVazio.length} <br>
+                    São elas: ${arrayVazio.sort((a,b) => a - b)}`);
+    
 </script>

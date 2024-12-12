@@ -7,10 +7,14 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
+    const numero = Number(prompt(`Informe um número:`));
+    const potencia = Number(prompt(`Informe a potência que deseja elevar o número anterior:`));
 
     //Processamento
-
+    for (contador = numero; contador <= numero * contador; contador+=potencia) {
+        let calculo = numero * contador
+        document.write(calculo)
+    }  
 
     //Saída
 
