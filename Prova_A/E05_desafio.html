@@ -8,11 +8,17 @@
     //AQUI, USE QUALQUER ESTRUTURA DE REPEETIÇÃO QUE DESEJAR!
 
     //Entrada
-
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
 
     //Processamento
-
+    let palindromo = [];
+    for (const item of lista) {
+        let soletrando = Array.from(item);
+        if (soletrando.join('') === soletrando.reverse().join('')) {
+            palindromo.push(item);
+        }
+    }
 
     //Saída
-
+    document.write(palindromo);
 </script>

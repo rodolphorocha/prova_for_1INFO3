@@ -7,11 +7,16 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
+    const numero = Number(prompt(`Informe um número: `));
 
     //Processamento
-
+    let divisores = [];
+    for (let contador = 1; contador <= numero; contador++) {
+        if (numero % contador === 0) {
+            divisores.push(contador)
+        }
+    }
 
     //Saída
-
+    document.write(`Os divisores de ${numero}` )
 </script>
